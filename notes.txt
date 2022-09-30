@@ -1,0 +1,40 @@
+vertex shaders
+
+Book of Shaders as documentation
+
+float
+two dimensional float => vec2
+three dimensional float => vec3
+four dimensional float => vec4
+
+
+attribute (attribute vec3 position)
+
+ this.material.uniforms.time.value = this.time;
+
+newPosition.z = 0.2*sin(length(position)*10. + time);
+
+
+position, normal, uv
+
+fragment
+
+  // gl_FragColor = vec4(vertexUV,0.,1.); // due to uv difference
+
+      float sinePulse = (1. + sin(vertexUV.x*50.))*0.5; // between 0 and 1
+
+    gl_FragColor = vec4(sinePulse,0.,0.,1.);
+    // gl_FragColor = vec4(vertexUV,0.,1.);
+
+
+texture
+
+modelMatrix = position on the screen
+
+vertex shaders to control corners of webgl plane
+sync webgl and html planes
+smooth scroll with asscroll
+fix position of planes
+fix position on resize and scroll
+disable raf on asscroll to prevent varying render times
+animation of webgl plane with vertex shaders on mouse events (over, out)

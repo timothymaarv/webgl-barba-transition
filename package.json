@@ -1,0 +1,12 @@
+{
+  "dependencies": {
+    "@ashthornton/asscroll": "^2.0.11",
+    "@barba/core": "^2.9.7",
+    "three": "^0.144.0"
+  },
+  "devDependencies": {
+    "@parcel/transformer-glsl": "^2.7.0",
+    "gsap": "^3.11.2",
+    "lil-gui": "^0.17.0"
+  }
+}
